@@ -31,7 +31,7 @@ body {
 }
   
 h2 {
-    color:#0000cc;
+    color:#6464B6;
     font-weight:900;
     font-family-sans-serif;
 }
@@ -231,6 +231,9 @@ padding: 0;
 -webkit-background-size: cover;
 background-size: cover;
 color:#fff;
+@media (max-width: $screen-xs-max) {
+    height: 200px;
+}
 }
  .donars-section .overlay {
               background: url(../img/overlays/02.png);     
@@ -314,15 +317,29 @@ color:#fff;
 
 #bibliografia {
     color:#fff;
-   
-      background: url(../img/help.jpg) no-repeat center center fixed;
+    background: url(../img/help.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-padding: 0;
--webkit-background-size: cover;
-background-size: cover;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.circle-small {
+    background: #eee;
+    border-radius: 250px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 3px #aaa;
+    width: 80px;
+    height: 80px;
 }
 
 #bibliografia .overlay {
